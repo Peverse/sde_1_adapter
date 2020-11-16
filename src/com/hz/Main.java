@@ -8,8 +8,7 @@ public class Main {
     public static void main(String[] args) {
 	// write your code here
 
-        ConsoleReader reader = new ConsoleReader();
-        ConsoleReaderAdapter readerAdapter = new ConsoleReaderAdapter();
+        ConsoleReaderAdapter reader = new ConsoleReaderAdapter();
         ConsoleWriter writer = new ConsoleWriter();
 
         // ask questions
@@ -22,7 +21,7 @@ public class Main {
         writer.write(q1);
 
         // read response
-        Boolean ans1 = readerAdapter.checkAnswer();
+        Boolean ans1 = reader.checkAnswer();
 
         //TODO
         // the reader should accept the following values as true:
