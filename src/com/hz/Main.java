@@ -9,6 +9,7 @@ public class Main {
 	// write your code here
 
         ConsoleReader reader = new ConsoleReader();
+        ConsoleReaderAdapter readerAdapter = new ConsoleReaderAdapter();
         ConsoleWriter writer = new ConsoleWriter();
 
         // ask questions
@@ -21,7 +22,7 @@ public class Main {
         writer.write(q1);
 
         // read response
-        Boolean ans1 = reader.readLine().equals("Yep");
+        Boolean ans1 = readerAdapter.checkAnswer();
 
         //TODO
         // the reader should accept the following values as true:
